@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="./assets/ccs/style.css">
+     <!-- Tailwind -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
  </head>
- <body>
-    
+ <body class="bg-gray-900 text-white items-center min-h-screen flex flex-col p-6">
+    <h1 class="text-3xl font-bold mb-6 ">Conversor de Monedas</h1>
+
+   <section class= bg-gray-800>
+      <div class="flex flex-col">
+         <label for="montoenPeso">Pesos CLP</label>
+         <input 
+         id="montoenPeso"
+         type="number" 
+         class="bg-gray-600 text-center"
+         placeholder = 'Ingres Monto CLP'>
+
+      </div>
+
+         <div class="flex flex-col">
+         <label for="moneda">Moneda a Convertir:</label>
+         <select
+         id="moneda"
+         type="number" 
+         class="bg-gray-600 text-center"
+         placeholder = "Ingres Monto CLP"
+         >
+         <option value="">Seleccione Moneda</option>
+         <option value="UF">uf</option>
+         <option value="dolar">dolar</option>
+         </select>
+      </div>
+      <button id ="btnBuscar" class= "bg-blue-200 rounded py-2 px-4 mt-2 w-full">Buscar</button>
+      <p id= "resultado" class="text-lg text-center max-w">0</p>
+      <p id= "error" class="bg-blue-200 text-lg text-center py-2  max-w"> </p>
+
+          <!-- Grafico -->
+         
+   </section>
+   
+   <script src="./assets/js/script.js"></script>
  </body>
  </html>
